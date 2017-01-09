@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Guessing Game</title>
+    <!-- Bootstrap and CSS here-->
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  </head>
+
+  <body>
+
+    <div id='app' class='center container'>
+
+      <div id='headers'>
+        <!-- Title and subtitles! -->
+        <h1 id='title'>GUESSING GAME</h1>
+        <h3 id='directions'>Guess a number between 1-100</h3>
+      </div>
+
+      <div id='main'>
+
+        <div id='input-parent'>
+          <!-- Player's guess input, and submit button -->
+          <input id='player-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+          <button id='submit' class='center btn btn-primary'>Go!</button>
+        </div>
+
+        <div id='guesses' >
+          <!-- unordered list of guesses -->
+          <ul id='guess-list'>
+            <li class='guess'>?</li>
+            <li class='guess'>?</li>
+            <li class='guess'>?</li>
+            <li class='guess'>?</li>
+            <li class='guess'>?</li>
+          </ul>
+        </div>
+
+        <div id="menu-btns">
+          <!-- reset and hint buttons -->
+          <button id='reset' class='btn btn-primary'>Reset</button>
+          <button id='hint' class='btn btn-primary'>Hint</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id='footer' class='center container'>
+
+      <div class='row'>
+
+        <div class='col-sm-4'>
+          <img id='fullstack' src='fa-logo@2x.png'></img>
+        </div>
+
+        <div class='col-sm-4'>
+          <h4><a href='https://github.com/dahlki/guessing-game.git'>Project and Artwork by Silvia Sonn</a></h4>
+        </div>
+
+        <div class='col-sm-4'>
+          <img id='grace' src='grace_hopper_academy.png'></img>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
+  <script src="guessingGame.js"></script>
+
+  </html>
+
